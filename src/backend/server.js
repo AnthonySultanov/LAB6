@@ -66,8 +66,10 @@ app.get('/api/books', (req, res) =>
 // books route
 app.post('/api/books', (req, res) =>
 {
-    let result = req.body;
-    result.authors = [""]
-    jsondata.books.push(result)
+
+    
+    console.log(req.body.title);
+    console.log(req.body.authors);
+    console.log(req.body.url);
 })
 
